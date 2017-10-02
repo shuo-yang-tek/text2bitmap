@@ -69,7 +69,15 @@ function drawGlyph(ctx, bitmap, glyph, fontSize, x, y) {
 	if( glyph.isBmp ) {
 		x = Math.round(x)
 		y = Math.round(y)
-		return sharp(glyph.glyph.getImageForSize(fontSize).data)
+	
+		const imageData = glyph.glyph.getImageForSize(fontSize)
+		if( !imageData )
+			return Promise.resolve()
+
+		if( !imageData.data )
+			return Promise.resolve()
+
+		return sharp(imageData.data)
 			.resize(fontSize)
 			.raw()
 			.toBuffer()
