@@ -1,0 +1,17 @@
+{
+	"name": "text2bitmap",
+	"version": "1.0.0",
+	"main": "src/index.js",
+	"repository": "https://github.com/shuo-yang-tek/text2bitmap.git",
+	"author": "Shuo Yang <shuo.yang.tek@gmail.com>",
+	"license": "MIT",
+	"private": false,
+	"scripts": {
+		"test": "node test/index.js"
+	},
+	"dependencies": {
+		"fontkit": "^1.7.7",
+		"node-emoji": "^1.8.1",
+		"sharp": "^0.18.4"
+	}
+}
