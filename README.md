@@ -10,7 +10,7 @@
 `text2bitmap.draw(opts)`
 ---
 
-* `opts.alignHorizonal`: align horizonal
+* `opts.alignHorizontal`: align horizontal
 
 * `opts.alignVertical`: align vertical
 

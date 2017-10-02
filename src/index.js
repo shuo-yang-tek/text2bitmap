@@ -148,7 +148,7 @@ function draw(opts) {
 	}
 
 	if( opts.width ) {
-		switch( opts.alignHorizonal ) {
+		switch( opts.alignHorizontal ) {
 		case 'center':
 			originPoint.x += (opts.width - renderWidth) / 2
 			break
